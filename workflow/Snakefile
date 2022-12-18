@@ -1,0 +1,7 @@
+rule all:
+    input:
+        'C.txt'
+    output:
+        'wc_C.txt'
+    shell:
+        "wc -w {input} > {output}"
