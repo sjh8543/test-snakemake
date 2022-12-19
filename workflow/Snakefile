@@ -1,11 +1,12 @@
 configfile: "config/config.yaml"
-in=config['input_file_name']
-out=config['output_file_name']
+
+arg1=config['input_file_name']
+arg2=config['output_file_name']
 
 rule all:
     input:
-        expand('{in}.txt',in=in)
+        expand('{arg1}.txt',arg1=arg1)
     output:
-        expand('{out}.txt',out=out)
+        expand('{arg2}.txt',arg2=arg2)
     shell:
         "wc -w {input} > {output}"
