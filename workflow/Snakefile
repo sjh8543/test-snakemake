@@ -1,6 +1,6 @@
 configfile: "config/config.yaml"
 
-ff=config['data_dir']
+ff=config
 
 rule all:
     input:
