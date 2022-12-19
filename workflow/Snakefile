@@ -1,5 +1,4 @@
 configfile: "config/config.yaml"
-
 in=config['input_file_name']
 out=config['output_file_name']
 
