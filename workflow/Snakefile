@@ -1,7 +1,9 @@
+ff=config['data_dir']
+
 rule all:
     input:
         'C.txt'
     output:
-        'wc_F.txt'
+        expand('wc_{ff}.txt',ff=ff)
     shell:
         "wc -w {input} > {output}"
