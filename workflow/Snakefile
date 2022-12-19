@@ -1,5 +1,3 @@
-configfile: "../config/config.yaml"
-
 rule all:
     input:
         'C.txt'
