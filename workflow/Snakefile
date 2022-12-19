@@ -1,11 +1,12 @@
 configfile: "config/config.yaml"
 
-ff=config['data_dir']
+in=config['input_file_name']
+out=config['output_file_name']
 
 rule all:
     input:
-        'C.txt'
+        expand('{in}.txt',in=in)
     output:
-        expand('wc_{ff}.txt',ff=ff)
+        expand('{out}.txt',out=out)
     shell:
         "wc -w {input} > {output}"
