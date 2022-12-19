@@ -1,7 +1,9 @@
+configfile: "../config/config.yaml"
+
 rule all:
     input:
         'C.txt'
     output:
-        'wc_E.txt'
+        'wc_F.txt'
     shell:
         "wc -w {input} > {output}"
