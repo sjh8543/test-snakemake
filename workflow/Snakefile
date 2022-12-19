@@ -4,6 +4,6 @@ rule all:
     input:
         'C.txt'
     output:
-        'wc_C.txt'
+        'wc_E.txt'
     shell:
         "wc -w {input} > {output}"
