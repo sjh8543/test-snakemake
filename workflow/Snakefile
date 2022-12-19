@@ -1,3 +1,5 @@
+configfile: "config/config.yaml"
+
 ff=config['data_dir']
 
 rule all:
