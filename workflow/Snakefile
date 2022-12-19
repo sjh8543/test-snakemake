@@ -1,7 +1,7 @@
 configfile: "config/config.yaml"
 
-arg1=config['input_file_name']
-arg2=config['output_file_name']
+arg1 = config['input_file_name']
+arg2 = config['output_file_name']
 
 rule all:
     input:
