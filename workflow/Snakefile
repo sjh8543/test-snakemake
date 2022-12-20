@@ -8,5 +8,5 @@ rule all:
         expand('{arg1}.txt',arg1=arg1)
     output:
         expand('{arg2}.txt',arg2=arg2)
-    run: 
-        "script/test.py"
+    shell: 
+        "python script/test.py"
